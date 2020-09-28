@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+          function makeCustomer(name,id,phone,address) {
+              var customer = {
+            name = "Yun, Hae seong",
+            id  = "yhstar2000",
+            phone = "010-8238-2638",
+            address = "seoul skuniv.",}
+
+            customer.toString = function () {
+                var output = '';
+                for (var key in this) {
+                    if (key != 'toString') {
+                        output += key + '\t' + this[key] + '\n'
+                    }
+                }
+                return output;
+            };
+            
+           alert(customer.toString());
+
+
+            
+          }
+           
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
